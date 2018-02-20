@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>website.me</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link rel="stylesheet"
+    href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+  </head>
+  <body>
+
+    <header id="myHeader", class="primary-header container group">
+      <h1 class="logo"> <a href="index.html">Yifei <br> Yan</a>
+      </h1>
+      <nav class="menu-nav">
+        <ul>
+          <li><a href="#about-me">About Me</a></li><!--
+          --><li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav primary-nav">
+        <ul>
+          <li><a href="mailto:yi.fei.yan.20@dartmouth.edu">Email</a></li><!--
+          --><li><a href="https://linkedin.com/in/yifeiyan">Linkedin</a></li><!--
+          --><li><a href="https://github.com/yiphei">Github</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="land", class="hero container">
+      <h2>Hello</h2>
+      <p>Welcome to my personal page</p>
+    </section>
+
+
+    <section class="hero container grey about">
+      <h2 class="bars">
+        <span id="about-me"> &nbsp; </span>
+        About Me
+      </h2>
+      <img src="assets/images/img2.jpg" alt="picture">
+
+      <p>I am originally from Italy. I have lived there for 17 years until I move to Los Angeles, California, where I currently live. I am currently a sophomore at Dartmouth majoring in CS and Math with a strong quantitative background and software programming.</p>
+      <p>During the last two years, I have taken courses where I solved wide ranging computational problems using different algorithms while improving my programming skills. In the Software Design & Implementation course, I have completed team projects that comprised of a large software system – among those a search engine and a custom game server with application that connected to a pebble watch . These systems usually comprised of multi-layer sockets and thread modules while ensuring maximum efficiency.</p>
+      <p>Outside of class, I run DartDrom Rentals as a managing partner. We are the largest bed and futon provider on campus, and the one with the largest revenues. running DartDorm Rentals as a managing partner taught me how to quickly think on the spot and make firm business decisions based on rigorous analysis. I frequently communicate with our customers to maintain our high customer service standards, and manage inventory maintenance as well as move-in/out logistics. Beyond daily operational tasks, I work with my partners to develop future growth efforts through marketing campaigns, market research, and brokering new deals to finance new inventory.
+      </p>
+      <p>During my free time, I like to travel. For me, travelling is not only a time to explore different cultures and places, but also a time for growth and self-exploration. Above is a picure of me in the Arabian desert.</p>
+    </section>
+
+    <section class="hero container row">
+      <h2 class="bars">
+        <span id="portfolio"> &nbsp; </span>
+        Portfolio
+      </h2>
+      <div class="grid">
+        <section class="teaser col-1-2">
+          <h5>Tiny Search Engine</h5>
+          <a href="https://github.com/yiphei/TinySearchEngine">
+            <img src="assets/images/project.png" alt="project icon">
+            <p id="con1">Written in C, the Tiny Search Engine replicates a web search engine and is comprised of three components: Web Crawler, Page Indexer, and Querier. Web Crawler is a standalone program that crawls the web and retrieves webpages starting from a “seed” URL. Page Indexer is a program that builds an index from a directory created by Web Crawler. Querier is standalone program that reads the index file produced by the Page Indexer, and page files produced by the Querier, and answers search queries submitted via stdin.</p>
+          </a>
+        </section><!--
+        --><section class="teaser col-1-2">
+            <h5>Pebble Scavenger Hunt</h5>
+            <a href="https://github.com/yiphei/Pebble-Scavenger-Hunt">
+              <img src="assets/images/project.png" alt="project icon">
+              <p id="con2">Written in C, the Pebble Scavenger Hunt is a team-based treasure hunt where the goal is to unlock a secret string by finding objects (krags) containing clues hidden around campus. The project is divided into three components. The Field Agent runs on a Pebble watch, and it constantly sends and updates its location to the Game Server and the Guide Agent, sends messages to the Game Server whenever an object was claimed, and displays messages whenever a Guide Agent</p>
+            </a>
+        </section>
+
+      </div>
+    </section>
+
+    <footer class="primary-footer group container">
+
+      <small>Yifei Yan</small>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="mailto:yi.fei.yan.20@dartmouth.edu">Email</a></li><!--
+          --><li><a href="https://linkedin.com/in/yifeiyan">Linkedin</a></li><!--
+          --><li><a href="https://github.com/yiphei">Github</a></li>
+        </ul>
+      </nav>
+
+    </footer>
+
+    <script>
+      window.onscroll = function() {myFunction()};
+
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+
+  </body>
+</html>
