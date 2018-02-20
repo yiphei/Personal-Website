@@ -421,7 +421,7 @@ p a{
 }
 
 #land{
-  background-image: url("../images/img1.jpg");
+  background-image: url("./../images/img1.JPG");
   background-size: cover;
   /* background-repeat: no-repeat; */
   padding-top: 180px;
